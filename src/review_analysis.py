@@ -56,12 +56,7 @@ headers = {
 
 transcript_output_response = requests.get(endpoint, headers=headers)
 while transcript_output_response.json()['status'] != 'completed':
-    sleep(5)
+    sleep(1)
     transcript_output_response = requests.get(endpoint, headers=headers)
 
 pprint(transcript_output_response.json()["sentiment_analysis_results"])
-# print(transcript_output_response.json()["text"])
-
-
-# st.title('An easy way to analyze YouTube video reviews')
-# st.text_input ('Enter URL') 
