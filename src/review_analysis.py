@@ -17,15 +17,15 @@ def read_file(filename, chunk_size=5242880):
                 break
             yield data
 
-video = YouTube('https://www.youtube.com/watch?v=jNQXAC9IVRw')
+video = YouTube('https://www.youtube.com/watch?v=IGQBtbKSVhY')
 yt = video.streams.get_audio_only()
-yt.download()
+yt.download(filename="video.mp4")
 
 current_dir = os.getcwd()
 for file in os.listdir(current_dir):
     if file.endswith(".mp4"):
         mp4_file = os.path.join(current_dir, file)
-        # print(mp4_file)
+        print(mp4_file)
 
 filename = mp4_file
 headers = {'authorization': auth_key}
