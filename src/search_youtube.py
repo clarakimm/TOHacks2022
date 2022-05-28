@@ -1,12 +1,16 @@
 from googleapiclient.discovery import build
+from configure import youtube_key
 
+def get_video_link(keywords):
+    urls = []
+    query = keywords + " review"
+    youtube = build('youtube', 'v3', developerKey=youtube_key)
+    request = youtube.search().list(part='snippet', q=query, type='video', maxResults=2)
+    response = request.execute()
+    
+    for result in response["items"]:
+        url = f'https://www.youtube.com/watch?v={result["id"]["videoId"]}'
+        urls.append(url)
+    return urls
 
-
-
-# def get_video_link(keywords, number)
-youtube = build('youtube', 'v3', developerKey=api_key)
-
-request = youtube.search().list(part='snippet', q='iphone12', type='video')
-
-response = request.execute()
-print(response)
+# get_video_link('iphone12')
