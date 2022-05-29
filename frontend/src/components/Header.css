@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans');
+
+  
   .header {
     display: flex;
     justify-content: space-around;
@@ -21,6 +24,7 @@
   .nav-container > a {
     margin-left: 5vw;
     font-size: 1.3em;
+    font-family: Kumbh Sans;
     text-decoration: none;
     color: var(--color-text-dark);
     font-weight: 600;
