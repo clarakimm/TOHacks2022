@@ -16,7 +16,7 @@ const Map_2 = () => {
         }}>
         Map
         </h1>
-        <div style={{ display: "flex", justifyContent: "right", marginRight: 200 }}>
+        <div style={{  justifyContent: "right", marginRight: 200 }}>
         <h2 style={{
           textAlign: "left",
           color: "#000000",
@@ -25,6 +25,9 @@ const Map_2 = () => {
         }}>
           Enter your location
         </h2>
+        <form>
+        <input type="text" id="fname" name="firstname" placeholder="Enter location"></input>
+        </form>
         <Search_button />
         <img style = {{
         height: 650,
