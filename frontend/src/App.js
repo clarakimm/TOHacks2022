@@ -5,10 +5,10 @@ import Header from "./components/Header";
 import Page1_body from "./components/Page1_body"
 import Login_button from "./components/Login_button";
 import Test from "./components/Test";
-import Home from "./components/Home";
-import Map from "./components/Map";
-import Market from "./components/Market";
-import Search from "./components/Search";
+import Home from "./components/pages/Home";
+import Map from "./components/pages/Map";
+import Market from "./components/pages/Market";
+import Search from "./components/pages/Search";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
