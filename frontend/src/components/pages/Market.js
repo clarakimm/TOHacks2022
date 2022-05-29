@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import MarketItem from "../MarketItem";
 
-const Market = ({ page }) => {
+const Market = () => {
   const data = [
     {
       name: "iPhone 11",
@@ -18,7 +18,6 @@ const Market = ({ page }) => {
       <img src="iPhone11.png" alt="" />
       <MarketItem />
       <MarketItem />
-      <div>the page is: {page}</div>
     </div>
   );
 };

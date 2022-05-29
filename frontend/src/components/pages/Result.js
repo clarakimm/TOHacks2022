@@ -2,13 +2,13 @@ import React from "react";
 import Header from "../Header";
 import DeviceSearch from "../DeviceSearch";
 
-const Search = () => {
+const Result = () => {
   return (
-    <div className="search">
+    <div>
       <Header />
-      <DeviceSearch submitted={false} />
+      <DeviceSearch submitted={true} />
     </div>
   );
 };
 
-export default Search;
+export default Result;

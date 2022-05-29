@@ -1,11 +1,11 @@
 .header {
   display: flex;
 }
-.homeContainer{
+.homeContainer {
   display: flex;
   align-items: center;
   vertical-align: middle;
   justify-content: center;
   height: 80vh;
-  background-color: #C8D5B9;
+  background-color: #c8d5b9;
 }

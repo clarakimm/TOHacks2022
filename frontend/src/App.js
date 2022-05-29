@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Page1_body from "./components/Page1_body";
-import Login_button from "./components/Login_button";
-import Test from "./components/Test";
 import Home from "./components/pages/Home";
 import Map from "./components/pages/Map";
 import Market from "./components/pages/Market";
 import Search from "./components/pages/Search";
+import Result from "./components/pages/Result";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,7 +15,6 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         setSomething(data.data);
-        console.log("hi");
       }, []);
   };
   useEffect(() => {
@@ -28,10 +24,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home page={"home"} />} />
-        <Route exact path="/search" element={<Search page={"search"} />} />
-        <Route exact path="/market" element={<Market page={"market"} />} />
-        <Route exact path="/map" element={<Map page={"map"} />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/search" element={<Search />} />
+        <Route exact path="/market" element={<Market />} />
+        <Route exact path="/map" element={<Map />} />
+        <Route exact path="/result" element={<Result />} />
       </Routes>
     </Router>
   );

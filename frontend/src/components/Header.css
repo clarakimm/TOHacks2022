@@ -1,31 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans");
 
-  
-  .header {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5vh;
-    background-color: var(--color-background);
-    padding: 3% 0 1%;
-    border-bottom: 1px solid var(--color-border);
-  }
-  .logo {
-    color: var(--color-text-dark);
-    color: inherit;
-    text-decoration: inherit;
-    font-family: RobotoThin;
-    font-size: 50px;
-  }
-  .nav-container {
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .nav-container > a {
-    margin-left: 5vw;
-    font-size: 1.3em;
-    font-family: Kumbh Sans;
-    text-decoration: none;
-    color: var(--color-text-dark);
-    font-weight: 600;
-  }
+.real-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+  background-color: var(--color-background);
+  padding: 3% 0 1%;
+  border-bottom: 1px solid var(--color-border);
+  background-color: #f0efe8;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+  background-color: var(--color-background);
+  padding: 3% 0 1%;
+  border-bottom: 1px solid var(--color-border);
+}
+.logo {
+  color: var(--color-text-dark);
+  color: inherit;
+  text-decoration: inherit;
+  font-family: RobotoThin;
+  font-size: 50px;
+}
+.nav-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-container > a {
+  margin-left: 5vw;
+  font-size: 1.3em;
+  font-family: Kumbh Sans;
+  text-decoration: none;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
