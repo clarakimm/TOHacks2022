@@ -7,7 +7,7 @@ import time
 import requests
 from time import sleep
 from pprint import pprint
-from search_youtube import get_video_links
+from search_youtube import get_video_link
 
 def read_file(filename, chunk_size=5242880):
     with open(filename, 'rb') as _file:
@@ -22,7 +22,7 @@ def getData(keyword):
     sentimentTotal = 0
     data={}
     data["headlines"] = []
-    links = get_video_links(keyword)
+    links = get_video_link(keyword)
     # ['asdklfjasl;.com', 'asdkl;jl;.com']
     for link in links:
         video = YouTube(link)
