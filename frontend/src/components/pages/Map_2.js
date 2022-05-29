@@ -1,40 +1,56 @@
 import React from "react";
 import Header from "../Header";
-import pic from "../map.png"
+import pic from "../map.png";
 import Search_button from "../Search_button";
 
 const Map_2 = () => {
   return (
     <div className="map">
       <Header />
-      <div style={{ marginLeft: 150 }}>
-        <h1 style={{
-          color: "#000000",
-          fontFamily: "Kumbh Sans",
-          fontWeight: "bold",
-          fontSize: "50px",
-        }}>
-        Map
-        </h1>
-        <div style={{  justifyContent: "right", marginRight: 200 }}>
-        <h2 style={{
-          textAlign: "left",
-          color: "#000000",
-          fontFamily: "Kumbh Sans",
-          fontWeight: "normal"
-        }}>
-          Enter your location
-        </h2>
-        <form>
-        <input type="text" id="fname" name="firstname" placeholder="Enter location"></input>
-        </form>
-        <Search_button />
-        <img style = {{
-        height: 650,
-        width: 950,
-        }}  
-        src={pic} />
-      </div>
+      <div className="map-container" style={{ marginLeft: 150 }}>
+        <div className="leftHalfMap">
+          <h1
+            style={{
+              color: "#000000",
+              fontFamily: "Kumbh Sans",
+              fontWeight: "bold",
+              fontSize: "50px",
+            }}
+          >
+            Map
+          </h1>
+          <div style={{ justifyContent: "right", marginRight: 200 }}>
+            <h2
+              style={{
+                textAlign: "left",
+                color: "#000000",
+                fontFamily: "Kumbh Sans",
+                fontWeight: "normal",
+              }}
+            >
+              Enter your location
+            </h2>
+            <form>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Enter location"
+                style={{ width: 350 }}
+              ></input>
+            </form>
+            <Search_button />
+          </div>
+        </div>
+        <div className="rightHalfMap">
+          <img
+            style={{
+              width: 750,
+              height: "auto",
+            }}
+            src={pic}
+          />
+        </div>
       </div>
     </div>
   );

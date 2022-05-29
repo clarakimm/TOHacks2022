@@ -35,3 +35,15 @@
   color: #6b9080;
   font-weight: 800;
 }
+.map-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+}
+.leftHalfMap {
+  display: flex;
+  flex-direction: column;
+}
+.rightHalfMap {
+  margin-left: -30px;
+}
