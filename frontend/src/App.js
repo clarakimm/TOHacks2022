@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Form from "./components/Form";
-import Header from "./components/Header";
+import Map from "./components/Map_Page/Map_components/Map";
 
 function App() {
   const [something, setSomething] = useState("");
@@ -12,9 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      {something}
-      <Header></Header>
-      <Form />
+      
+      <Map/>
+
     </div>
   );
 }
