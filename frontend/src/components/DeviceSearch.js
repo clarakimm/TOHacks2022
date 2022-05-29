@@ -15,8 +15,14 @@ const DeviceSearch = () => {
           id="search"
           name="search"
           placeholder="Enter device name"
-          onChange={(e) => setSearch(e.target.value)}
-        ></input>
+          onChange={(e) => {
+            e.preventDefault();
+            setSearch(e.target.value);
+            // change the page state
+          }}
+        />
+        {/* this component should have a nonsubmit state and a submitted state */}
+        {/* we render differneent things depending on the submit state */}
         <input type="submit"></input>
       </form>
     </div>
