@@ -1,5 +1,9 @@
 from flask import Flask, request
+from flask_cors import CORS, cross_origin
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+@cross_origin()
 
 @app.route('/', methods=["GET", "POST"])
 def index():
@@ -8,8 +12,10 @@ def index():
     #     json_data = request.json
     #     # print(json_data)
     #     img_data = json_data['image']
+    # what device in the form
+    # positive neg nutrual
         
     if request.method == 'GET':
-        return "hello world"
+        return {"data": "aahiiii"}
 if __name__ == '__main__':
     app.run(debug=True)
