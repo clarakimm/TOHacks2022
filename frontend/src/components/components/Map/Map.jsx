@@ -4,8 +4,7 @@ import { useMediaQuery } from "@material-ui/core";
 // import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 // import Rating from '@material-ui/lab/Rating';
 
-import useStyles from "./Map_style";
-import { Marker, MarkerClusterer } from "@react-google-maps/api";
+require("dotenv").config();
 
 //import GetLocation from './get_user_location3';
 
@@ -38,12 +37,9 @@ const Map = () => {
   // });
 
   return (
-    <div
-      className={classes.mapContainer}
-      style={{ height: "80vh", width: "100%" }}
-    >
+    <div className={classes.mapContainer}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyBJdLwOOsF-Eidz6NjWobDku0lekxfZSRg" }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
         defaultCenter={coordinates}
         center={coordinates}
         defaultZoom={14}
@@ -51,7 +47,7 @@ const Map = () => {
         options={""}
         onChange={""}
         onChildClick={""}
-        // id = 'map'
+        id="map"
       >
         {/* {markers.map(marker => <Marker key="bestBuy" position={{lat:45, lng: -75}}/>) } */}
       </GoogleMapReact>
