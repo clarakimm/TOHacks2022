@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./components/pages/Home";
-import Map from "./components/pages/Map";
+import Map from "./components/pages/Map_2";
 import Market from "./components/pages/Market";
 import Search from "./components/pages/Search";
 import Result from "./components/pages/Result";
