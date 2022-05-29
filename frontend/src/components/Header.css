@@ -1,0 +1,50 @@
+.header {
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .logo {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: RobotoThin;
+    font-size: 50px;
+  }
+  
+  .header_navbar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .header-top_seperator {
+    width: 100%;
+    border: none;
+    height: 2px;
+    margin-top: 2px;
+    background-color: black;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+  }
