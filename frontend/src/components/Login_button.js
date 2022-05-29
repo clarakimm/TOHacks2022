@@ -5,12 +5,11 @@ const Login_button = () => {
         alert('You clicked me!');
       }
     return(
-        <div style={{display: 'flex', justifyContent: 'center' }}>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
           <button variant='contained'
                 style={{
                 float: 'center',
                 textAlign: 'center',
-                color: '#000000',
                 fontFamily: 'Kumbh Sans',
                 fontWeight: 'normal',
                 alignSelf: 'center',
@@ -18,6 +17,11 @@ const Login_button = () => {
                 alignItems: 'center',
                 textAlignVertical: 'center',
                 alignContent: 'center',
+                padding: "10px 50px",
+                fontSize: "1.5em",
+                backgroundColor: '#F0EFE8',
+                borderRadius: "10px",
+                border: "solid 2px grey",
             }}onClick={sayHello}>Login</button>  
         </div>
     )

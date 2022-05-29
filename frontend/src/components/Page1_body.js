@@ -15,6 +15,7 @@ const Page1_body = () => {
                 alignItems: 'center',
                 textAlignVertical: 'center',
                 alignContent: 'center',
+                fontSize: '50px'
             }}>Welcome to ...</h1>
             <h2 style={{
                 textAlign: 'center',
