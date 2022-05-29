@@ -3,11 +3,11 @@ import Header from "../Header";
 import MarketItem from "../MarketItem";
 
 const Market = () => {
-  const data = [
+  const datas = [
     {
       name: "iPhone 11",
       cost: "$400",
-      image: "iPhone11.png",
+      image: "iPhone11g.png",
     },
     {
       name: "iPhone X",
@@ -40,19 +40,24 @@ const Market = () => {
       image: "s20.png",
     },
     {
-      name: "Samsung Galaxy S21 Ultra",
+      name: "Samsung Galaxy S21",
       cost: "$800",
       image: "s21ultra.png",
-    }
+    },
   ];
 
   return (
-    <div className="market">
+    <div>
       <Header />
-      <h1>MARKETPLACE</h1>
-      <img src="iPhone11.png" alt="" />
-      <MarketItem />
-      <MarketItem />
+      <div className="market">
+        <h1 style={{ fontSize: "2.3em" }}>MARKETPLACE</h1>
+        <h2>Devices</h2>
+        <div className="marketMapContainer">
+          {datas.map((data) => (
+            <MarketItem name={data.name} cost={data.cost} image={data.image} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
