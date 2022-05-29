@@ -3,7 +3,8 @@ import "./App.css";
 import Form from "./components/Form";
 import Header from "./components/Header";
 import Test from "./components/Test";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [something, setSomething] = useState("aaa");
@@ -22,20 +23,12 @@ function App() {
 
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Test page={home} />
-        </Route>
-        <Route exact path="/search">
-          <Test page={search} />
-        </Route>
-        <Route exact path="/market">
-          <Test page={market} />
-        </Route>
-        <Route exact path="/map">
-          <Test page={map} />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home page={"home"} />} />
+        <Route exact path="/search" element={<Test page={"search"} />} />
+        <Route exact path="/market" element={<Test page={"market"} />} />
+        <Route exact path="/map" element={<Test page={"map"} />} />
+      </Routes>
     </Router>
   );
 }
