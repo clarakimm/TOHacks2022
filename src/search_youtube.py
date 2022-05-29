@@ -1,7 +1,7 @@
 from googleapiclient.discovery import build
 from configure import youtube_key
 
-def get_video_link(keywords):
+def get_video_links(keywords):
     urls = []
     query = keywords + " review"
     youtube = build('youtube', 'v3', developerKey=youtube_key)
@@ -13,4 +13,4 @@ def get_video_link(keywords):
         urls.append(url)
     return urls
 
-# get_video_link('iphone12')
+# get_video_links('iphone12')

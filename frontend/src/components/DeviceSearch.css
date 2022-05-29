@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans");
+input[type="text"],
+select {
+  font-size: 1.05em;
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #afbba1;
+  color: #32382a;
+  font-family: Kumbh Sans;
+}
+
+input[type="submit"] {
+  font-size: 0.9em;
+  width: 100%;
+  background-color: #465362;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Kumbh Sans;
+}
+
+input[type="submit"]:hover {
+  background-color: #6d7c8e;
+}
+
+.market-btn {
+  font-size: 0.9em;
+  width: 500px;
+  text-align: center;
+  background-color: #465362;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Kumbh Sans;
+}
+.link {
+  text-decoration: none;
+}
+.device-container {
+  margin-top: -40px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Kumbh Sans;
+}
+.rightResults {
+  width: 32%;
+  background-color: #f0efe8;
+  height: 70vh;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+.longName {
+  width: 87%;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.sentiment {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 40px 0;
+}
+.h1header {
+  font-size: 2em;
+  font-weight: 900;
+}
+.h2header {
+  font-weight: 800;
+}
+.realResults {
+  /* background-color: red; */
+  margin-top: -20px;
+  text-align: center;
+}
+.resultList {
+  text-align: left;
+}
+.resultList li {
+  margin-bottom: 10px;
+}
+.searchNameText {
+  font-weight: 800;
+}
+.introText {
+  font-size: 1.2em;
+}
