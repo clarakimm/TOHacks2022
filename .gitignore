@@ -2,3 +2,5 @@ configure.py
 venv
 __pycache__
 *.mp4
+node_modules
+.env
