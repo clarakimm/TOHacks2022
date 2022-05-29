@@ -5,21 +5,27 @@
     flex-direction: column;
   }
   
-  .header-logo {
+  .header-top {
+    display: flex;
+    width: 100%;
+    height: 80px;
+  }
+
+  .header-top_logo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 20px;
   }
   
-  .logo {
+  .header-logo {
     color: inherit;
     text-decoration: inherit;
     font-family: RobotoThin;
     font-size: 50px;
   }
   
-  .header_navbar {
+  .header-top_navbar {
     display: flex;
     flex: 1;
     flex-direction: column;
