@@ -1,56 +1,27 @@
-.header {
-    margin-top: 20px;
+  .header {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+    background-color: var(--color-background);
+    padding: 3% 0 1%;
+    border-bottom: 1px solid var(--color-border);
   }
-  
-  .header-top {
-    display: flex;
-    width: 100%;
-    height: 80px;
-  }
-
-  .header-top_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .header-logo {
+  .logo {
+    color: var(--color-text-dark);
     color: inherit;
     text-decoration: inherit;
     font-family: RobotoThin;
     font-size: 50px;
   }
-  
-  .header-top_navbar {
+  .nav-container {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    align-items: flex-end;
   }
   
-  .header-top_seperator {
-    width: 100%;
-    border: none;
-    height: 2px;
-    margin-top: 2px;
-    background-color: black;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .navbar-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30px;
-    color: inherit;
-    text-decoration: inherit;
-    text-transform: uppercase;
-    outline: none;
+  .nav-container > a {
+    margin-left: 5vw;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-weight: 600;
   }
