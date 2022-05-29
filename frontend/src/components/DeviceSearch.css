@@ -8,6 +8,7 @@ input[type=text], select {
     box-sizing: border-box;
     background-color: #AFBBA1;
     color: #8C977E;
+    font-family: Kumbh Sans;
   }
 
   input[type=submit] {
@@ -19,6 +20,7 @@ input[type=text], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: Kumbh Sans;
   }
   
   input[type=submit]:hover {

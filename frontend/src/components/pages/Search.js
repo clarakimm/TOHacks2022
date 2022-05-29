@@ -7,7 +7,6 @@ const Search = ({ page }) => {
     <div className="search">
       <Header />
       <DeviceSearch />
-      <div>the page is: {page}</div>
     </div>
   );
 };
