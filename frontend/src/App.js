@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import Header from "./components/Header";
+import Page1_body from "./components/Page1_body"
+import Login_button from "./components/Login_button";
 
 function App() {
   const [something, setSomething] = useState("");
@@ -13,7 +15,8 @@ function App() {
   return (
     <div className="App">
       {something}
-      <Header></Header>
+      <Header />
+      <Page1_body />
       <Form />
     </div>
   );
