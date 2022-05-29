@@ -4,6 +4,9 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 import Test from "./components/Test";
 import Home from "./components/Home";
+import Map from "./components/Map";
+import Market from "./components/Market";
+import Search from "./components/Search";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -25,9 +28,9 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home page={"home"} />} />
-        <Route exact path="/search" element={<Test page={"search"} />} />
-        <Route exact path="/market" element={<Test page={"market"} />} />
-        <Route exact path="/map" element={<Test page={"map"} />} />
+        <Route exact path="/search" element={<Search page={"search"} />} />
+        <Route exact path="/market" element={<Market page={"market"} />} />
+        <Route exact path="/map" element={<Map page={"map"} />} />
       </Routes>
     </Router>
   );
