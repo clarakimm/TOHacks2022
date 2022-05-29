@@ -47,3 +47,8 @@
 .rightHalfMap {
   margin-left: -30px;
 }
+.logo {
+  padding: 0;
+  width: 75px;
+  height: auto;
+}

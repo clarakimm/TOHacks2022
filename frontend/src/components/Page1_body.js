@@ -11,20 +11,20 @@ const Page1_body = () => {
           color: "#000000",
           fontFamily: "Kumbh Sans",
           fontWeight: "bold",
-          fontSize: "50px"
+          fontSize: "50px",
         }}
       >
-        Welcome to ...
+        Welcome to PE3R
       </h1>
       <h2
         style={{
           textAlign: "center",
           color: "#000000",
           fontFamily: "Kumbh Sans",
-          fontWeight: "normal"
+          fontWeight: "normal",
         }}
       >
-        Combating e-waste, one device at a time
+        An e-sustainable future right before our eyes
       </h2>
       <Login_button />
     </div>

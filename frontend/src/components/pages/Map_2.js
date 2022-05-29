@@ -30,7 +30,7 @@ const Map_2 = () => {
             >
               Enter your location
             </h2>
-            <form>
+            <form autoComplete="off">
               <input
                 type="text"
                 id="fname"

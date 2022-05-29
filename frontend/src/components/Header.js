@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <header className="real-header">
       <Link to="/" className="logo">
-        LOGO
+        {/* logo */}
+        <img src="tohackslogo.png" alt="PE3R Logo" className="logo" />
       </Link>
       <div className="nav-container">
         <Link to="/search" className="navbar-item">
