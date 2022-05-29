@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../Header";
 
-const Home = ({ page }) => {
+const Map = ({ page }) => {
   return (
-    <div className="home">
+    <div className="map">
       <Header />
       <div>the page is: {page}</div>
     </div>
   );
 };
 
-export default Home;
+export default Map;
