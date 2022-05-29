@@ -11,12 +11,7 @@ const Page1_body = () => {
           color: "#000000",
           fontFamily: "Kumbh Sans",
           fontWeight: "bold",
-          alignSelf: "center",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlignVertical: "center",
-          alignContent: "center",
-          fontSize: "50px",
+          fontSize: "50px"
         }}
       >
         Welcome to ...
@@ -26,12 +21,7 @@ const Page1_body = () => {
           textAlign: "center",
           color: "#000000",
           fontFamily: "Kumbh Sans",
-          fontWeight: "normal",
-          alignSelf: "center",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlignVertical: "center",
-          alignContent: "center",
+          fontWeight: "normal"
         }}
       >
         Combating e-waste, one device at a time

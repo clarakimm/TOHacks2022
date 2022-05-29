@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Login_button = () => {
+const Search_button = () => {
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <Link to="/search">
@@ -14,18 +14,18 @@ const Login_button = () => {
             fontWeight: "500",
             alignSelf: "center",
             padding: "10px 50px",
-            fontSize: "1.5em",
-            backgroundColor: "#465362",
+            fontSize: "1.0em",
+            backgroundColor: '#465362',
             borderRadius: "10px",
             color: "white",
             border: "solid 2px grey",
           }}
         >
-          Search for a Device
+          Enter
         </button>
       </Link>
     </div>
   );
 };
 
-export default Login_button;
+export default Search_button;

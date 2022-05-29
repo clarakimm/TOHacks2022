@@ -1,11 +1,38 @@
 import React from "react";
 import Header from "../Header";
+import pic from "../map.png"
+import Search_button from "../Search_button";
 
 const Map_2 = () => {
   return (
     <div className="map">
       <Header />
-      <div>map</div>
+      <div style={{ marginLeft: 150 }}>
+        <h1 style={{
+          color: "#000000",
+          fontFamily: "Kumbh Sans",
+          fontWeight: "bold",
+          fontSize: "50px",
+        }}>
+        Map
+        </h1>
+        <div style={{ display: "flex", justifyContent: "right", marginRight: 200 }}>
+        <h2 style={{
+          textAlign: "left",
+          color: "#000000",
+          fontFamily: "Kumbh Sans",
+          fontWeight: "normal"
+        }}>
+          Enter your location
+        </h2>
+        <Search_button />
+        <img style = {{
+        height: 650,
+        width: 950,
+        }}  
+        src={pic} />
+      </div>
+      </div>
     </div>
   );
 };
