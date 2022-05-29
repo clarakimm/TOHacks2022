@@ -9,7 +9,7 @@ const Home = ({ page }) => {
       <div className="homeContainer">
         <Page1_body />
         {/* the page is: {page} */}
-        </div>
+      </div>
     </div>
   );
 };

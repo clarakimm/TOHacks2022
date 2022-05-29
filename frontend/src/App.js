@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Form from "./components/Form";
 import Header from "./components/Header";
-import Page1_body from "./components/Page1_body"
+import Page1_body from "./components/Page1_body";
 import Login_button from "./components/Login_button";
 import Test from "./components/Test";
 import Home from "./components/pages/Home";
