@@ -9,7 +9,9 @@ const DeviceSearch = () => {
       {/* <p>What device would you like to search for?</p> */}
       <form action="http://127.0.0.1:5000/" method="POST">
         {/* <input type="text" id="fname" name="fname"/><br></br> */}
-        <label for="search">What device would you like to search for?</label>
+        <label for="search" style={{ fontFamily: "Kumbh Sans" }}>
+          What device would you like to search for?
+        </label>
         <input
           type="text"
           id="search"
